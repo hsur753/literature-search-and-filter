@@ -7,7 +7,7 @@ Supported Databases:
 - ScienceDirect
 
 ### Getting Started
-Export your database search results as Bibtex files and place them in a suitable directory.
+Export your database search results as BibTex files and place them in a suitable directory.
 
 Supported Python version >= `3.10.0`.
 Install the dependencies by running the following command.
@@ -21,13 +21,13 @@ Run `python main.py` with the below arguments.
 
 | Argument | Value | Required |
 |---|---|---|
-| --file_path | Path to your BibText Directory | &check; |
+| --file_path | Path to your BibTex Directory | &check; |
 | --mode | "acm", "ieee", "scdrt" | &check; |
 | --page_limit | Preferred Minimum Page Count | &check; |
 | --excel_path | Path to Output Excel File | &cross; |
 | --search_keywords | None | &cross; |
 
-On completion, an Excel file will be created containing the literature's information (Author, Title, DOI URL), which successfully passed the screening process.
+On completion, an Excel file will be created containing the information (Author, Title, DOI URL) on literature that successfully passed the screening process.
 If `--excel_path` is specified, the selected Excel workbook will be appended with the results of the screening process; this may be useful if using multiple databases in a single literature review. Otherwise, a new file will be created.
 
 #### Keyword Boolean Logic
